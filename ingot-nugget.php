@@ -1,6 +1,6 @@
 <?php
 /**
-Plugin Name: Nugget by Ingot: Easy, automated and native A/B testing for everyone
+Plugin Name: Nugget by Ingot: Easy, automated and native A/B testing for everyone.
 Version: 1.0.0-b-1
 Plugin URI:  http://IngotHQ.com
 Description: A nugget of Ingot, the easy A/B testing solution for WordPress
