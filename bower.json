@@ -32,16 +32,17 @@
     "sweetalert": "~1.1.0",
     "bootstrap-bower": "https://github.com/angular-ui/bootstrap-bower/",
     "ngclipboard": "~1.1.0",
-    "select2": "~4.0.1"
+    "select2": "~4.0.1",
+    "angular-bootstrap": "~1.2.4"
   },
   "resolutions": {
-    "angular": "1.3.0",
+    "angular": "1.4.9",
     "messageformat": "~0.2.2"
   },
   "install": {
     "path": {
       "css": "assets/vendor/css",
-      "js": "assets//vendor/js",
+      "js": "assets/vendor/js",
       "/[sc|le]ss$/": "assets/vendor/css"
     },
     "ignore": [

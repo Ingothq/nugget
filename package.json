@@ -1,15 +1,15 @@
 {
-  "name": "ingot",
-  "version": "1.2.1-b-1",
+  "name": "ingot-nugget",
+  "version": "1.0.0-b-1",
   "description": "Ingot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ingothq/ingot"
+    "url": "https://github.com/ingothq/ingot-nugget"
   },
   "author": "Josh Pollock",
   "license": "GPLv2+",
   "bugs": {
-    "url": "https://github.com/ingothq/ingot"
+    "url": "https://github.com/ingothq/ingot-nugget"
   },
   "devDependencies": {
     "bower": "*",
