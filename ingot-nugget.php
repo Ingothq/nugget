@@ -75,49 +75,10 @@ if( ! defined( 'INGOT_VER' ) ){
 			include_once dirname( __FILE__ ) . '/vendor/ingot/ingot-core/includes/active_check.php';
 			include_once( dirname(__FILE__ ) . '/ingot_bootstrap.php' );
 			add_action( 'plugins_loaded', array( 'ingot_bootstrap', 'maybe_load' ) );
-			add_action( 'ingot_loaded', 'ingot_fs' );
 
 		}
 
 	}
-
-	/**
-	 * Load Freemius
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return \Freemius
-	 */
-	function ingot_fs() {
-		global $ingot_fs;
-
-		if ( ! isset( $ingot_fs ) ) {
-
-			require_once dirname(__FILE__) . '/vendor/freemius/wordpress-sdk/start.php';
-
-			$ingot_fs = fs_dynamic_init( array(
-				'id'                => '210',
-				'slug'              => 'ingot',
-				'public_key'        => 'pk_e6a19a3508bdb9bdc91a7182c8e0c',
-				'is_live'           => true,
-				'is_premium'        => true,
-				'has_addons'        => true,
-				'has_paid_plans'    => true,
-				'is_org_compliant'  => true,
-				'menu'              => array(
-					'slug'       => 'ingot-admin-app',
-					'support'    => false,
-					'first-path' => 'admin.php?page=ingot-admin-app#',
-				),
-
-			) );
-
-		}
-
-		return $ingot_fs;
-
-	}
-
 
 
 
@@ -140,6 +101,47 @@ if( ! defined( 'INGOT_VER' ) ){
 
 }
 
+
+if ( ! function_exists( 'ingot_fs' ) ) {
+	/**
+	 * Load Freemius
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return \Freemius
+	 */
+	function ingot_fs() {
+		global $ingot_fs;
+
+		if ( ! isset( $ingot_fs ) ) {
+
+			require_once dirname( __FILE__ ) . '/vendor/freemius/wordpress-sdk/start.php';
+
+			$ingot_fs = fs_dynamic_init( array(
+				'id'               => '210',
+				'slug'             => 'ingot',
+				'public_key'       => 'pk_e6a19a3508bdb9bdc91a7182c8e0c',
+				'is_live'          => true,
+				'is_premium'       => false,
+				'has_addons'       => true,
+				'has_paid_plans'   => true,
+				'is_org_compliant' => true,
+				'secret_key'       => 'sk_y$>DON_$cxMu(tUF*d15_kZjRAnkJ',
+				'menu'             => array(
+					'slug'       => 'ingot-admin-app',
+					'support'    => false,
+					'first-path' => 'admin.php?page=ingot-admin-app#',
+				),
+
+			) );
+
+		}
+
+		return $ingot_fs;
+	}
+
+	ingot_fs();
+}
 
 
 
