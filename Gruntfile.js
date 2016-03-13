@@ -135,7 +135,7 @@ module.exports = function (grunt) {
         },
         replace: {
             core_file: {
-                src: [ 'ingot.php' ],
+                src: [ 'ingot-nugget.php' ],
                 overwrite: true,
                 replacements: [{
                     from: /Version:\s*(.*)/,
@@ -144,7 +144,16 @@ module.exports = function (grunt) {
                     from: /define\(\s*'INGOT_VER',\s*'(.*)'\s*\);/,
                     to: "define( 'INGOT_VER', '<%= pkg.version %>' );"
                 }]
-            }
+            },
+            readme_txt: {
+                src: [ 'readme.txt' ],
+                overwrite: true,
+                replacements: [{
+                    from: /Stable tag: (.*)/,
+                    to: "Stable tag: <%= pkg.version %>"
+                }]
+
+            },
         },
         uglify: {
             frontend: {
@@ -212,7 +221,7 @@ module.exports = function (grunt) {
     grunt.registerTask( 'default', [ 'uglify' ]);
 
     //release tasks
-    grunt.registerTask( 'version_number', [ 'replace:core_file' ] );
+    grunt.registerTask( 'version_number', [ 'replace:core_file', 'replace:readme_txt' ] );
     grunt.registerTask( 'pre_vcs', [ 'shell:activate', 'version_number', 'copy', 'clean:pre_compress', 'compress' ] );
     grunt.registerTask( 'do_git', [ 'gitadd', 'gitcommit', 'gittag', 'gitpush' ] );
     grunt.registerTask( 'just_build', [  'shell:composer', 'copy', 'clean:pre_compress', 'compress' ] );

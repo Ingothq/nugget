@@ -126,7 +126,6 @@ if ( ! function_exists( 'ingot_fs' ) ) {
 				'has_addons'       => true,
 				'has_paid_plans'   => true,
 				'is_org_compliant' => true,
-				'secret_key'       => 'sk_y$>DON_$cxMu(tUF*d15_kZjRAnkJ',
 				'menu'             => array(
 					'slug'       => 'ingot-admin-app',
 					'support'    => false,
@@ -141,6 +140,7 @@ if ( ! function_exists( 'ingot_fs' ) ) {
 	}
 
 	ingot_fs();
+
 }
 
 
