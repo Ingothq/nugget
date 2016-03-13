@@ -4,7 +4,7 @@ Tags: a/b testing, multi-variant testing, ab testing, ab test, a/b testing, cro,
 Donate link: https://ingothq.com
 Requires at least: 4.4.0
 Tested up to: 4.5
-Stable tag: 1.1.1
+Stable tag: 1.0.0
 License: GPL v2+
 
 A tiny nugget of Ingot - A/B testing made easy for WordPress - Do less, convert more.
