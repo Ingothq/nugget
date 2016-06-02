@@ -32,13 +32,14 @@
         "url": "https://github.com/ingothq/ingot-core"
       }
     ],
-    "require": {
-        "calderawp/dismissible-notice": "dev-master",
-        "ingot/ingot-core" : "1.2.1"
-    },
     "config": {
       "platform": {
         "php": "5.4"
       }
+    },
+    "require": {
+        "calderawp/dismissible-notice": "dev-master",
+        "ingot/ingot-core" : "1.2.1"
     }
+
 }
