@@ -1,10 +1,10 @@
 === Nugget by Ingot: Easy, automated and native A/B testing for everyone ===
 Contributors: Shelob9
-Tags: a/b testing, multi-variant testing, ab testing, ab test, a/b testing, cro, content rate optimization, split tests, split testing, easy digital downloads, woocommerce, woo, edd, give, hig-roy, givewp, testing, #cro
+Tags: a/b testing, multi-variant testing, ab testing, ab test, a/b testing, cro, content rate optimization, split tests, split testing, easy digital downloads, woocommerce, woo, edd, give, hi-roy, givewp, testing, #cro, caldera forms, caldera-forms, forms,
 Donate link: https://ingothq.com
 Requires at least: 4.4.0
-Tested up to: 4.5
-Stable tag: 1.0.0
+Tested up to: 4.6
+Stable tag: 1.0.1
 License: GPL v2+
 
 A tiny nugget of Ingot - A/B testing made easy for WordPress - Do less, convert more.
@@ -81,3 +81,8 @@ Yes. Many sites use a static HTML cache, which could be an issue if we didn't wo
 
 = 1.0.0 =
 Initial release of our A/B testing plugin for WordPress
+
+= 1.0.1 June 2, 2016 =
+* Minor bug fixes
+* Support for A/B testing forms with [Ingot For Caldera Forms](https://calderawp.com/downloads/ingot-for-caldera-forms/)
+* [Ability to clean out old session data](https://ingothq.com/documentation/cleaning-out-old-session-data/).
