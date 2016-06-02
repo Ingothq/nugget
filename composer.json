@@ -34,6 +34,6 @@
     ],
     "require": {
         "calderawp/dismissible-notice": "dev-master",
-        "ingot/ingot-core" : "*"
+        "ingot/ingot-core" : "1.2.1"
     }
 }
