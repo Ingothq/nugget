@@ -1,7 +1,7 @@
 <?php
 /**
 Plugin Name: Nugget by Ingot: Easy, automated and native A/B testing for everyone.
-Version: 1.0.0
+Version: 1.0.1
 Plugin URI:  http://IngotHQ.com
 Description: A nugget of Ingot, the easy A/B testing solution for WordPress
 Author:      Ingot LLC
@@ -16,7 +16,7 @@ Domain Path: /languages
  */
 
 if( ! defined( 'INGOT_VER' ) ){
-	define( 'INGOT_VER', '1.0.0' );
+	define( 'INGOT_VER', '1.0.1' );
 	define( 'INGOT_TYPE', 'NUGGET' );
 	define( 'INGOT_URL', plugin_dir_url( __FILE__ ) );
 	define( 'INGOT_DIR', dirname( __FILE__ ) );
